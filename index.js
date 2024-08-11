@@ -12,7 +12,7 @@ import Users from "./Models/User.js";
 import Category from "./model/Category.js";
 import Offcampus from "./OffModel/OffCampus.js";
 import appdata from "./AppModel/Appdata.js";
-import Similar from "./Similarjobs/SimilarModel.js";
+import Similar from "./Similarjobs/Similarmodel.js";
 
 
 app.post("/login", async (req, res) => {
