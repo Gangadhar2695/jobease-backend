@@ -1,7 +1,7 @@
-import express from "express"
-import cors from "cors"
+import express from "express";
+import cors from "cors";
 
-const app = express()
+const app = express();
 
 app.use(express.json());
 app.use(cors());
@@ -14,17 +14,11 @@ import Offcampus from "./OffModel/OffCampus.js";
 import appdata from "./AppModel/Appdata.js";
 import Similar from "./Similarjobs/Similarmodel.js";
 
-
 app.post("/login", async (req, res) => {
-
   let user = new Users(req.body);
   let result = await user.save();
   res.send(result);
-
 })
-
-
-
 
 app.post("/Subscribe", async (req, res) => {
   let category = new Category(req.body);
